@@ -1,0 +1,42 @@
+:host {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.group {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  padding: 16px;
+  width: 20%;
+  min-width: 50px;
+  min-height: 50px;
+  max-width: 20%;
+}
+.group_1 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  padding: 16px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.list {
+  height: max-content;
+}
+.reveal-dash-board {
+  min-width: 400px;
+  min-height: 200px;
+  flex-grow: 1;
+  flex-basis: 0;
+}

@@ -1,0 +1,13 @@
+<div class="column-layout group">
+  <igx-list class="list">
+    @for (item of revealWebinarDashboardNames; track item) {
+      <igx-list-item (click)="listItemClick(item)">
+        <span igxListLineTitle>{{ item.dashboardTitle }}</span>
+        <span igxListLineSubTitle>{{ item.dashboardFileName }}</span>
+      </igx-list-item>
+    }
+  </igx-list>
+</div>
+<div class="column-layout group_1">
+  <rv-reveal-view [dashboard]="dashboardName!" [options]="dashboardOptions" class="reveal-dash-board"></rv-reveal-view>
+</div>
